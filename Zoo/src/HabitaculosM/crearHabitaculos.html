@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Habitáculo</title>
+  <link rel="stylesheet" href="habitaculos.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Crear tu habitáculo</h2>
+      <form>
+        <label for="zona">Zona:</label>
+        <input name="zona" type="text" required />
+
+        <label for="mcuadrado">M^2:</label>
+        <input name="mcuadrado" type="number" required />
+
+        <label for="decoracion">Decoración:</label>
+        <div class="radio-group">
+          <label><input name="decoracion" type="radio" value="1" required /> Sí</label>
+          <label><input name="decoracion" type="radio" value="1" required /> No</label>
+        </div>
+
+        <label for="suelo">Tipo de suelo:</label>
+        <input type="text" name="suelo" required />
+
+        <div class="button-group">
+          <button id="guardarBtn" type="submit">Guardar</button>
+          <button id="resetBtn" type="reset">Borrar información</button>
+        </div>
+      </form>
+    </div>
+    <a href="../HabitaculosM/listaHabitaculos.html">
+      <button id="backToMainBtt">Volver</button>
+    </a>
+  </div>
+</body>
+
+</html>
